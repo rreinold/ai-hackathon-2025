@@ -1,3 +1,5 @@
+const baseUrl = '/ai-hackathon-2025';
+
 export default function DebugPage() {
   return (
     <div className="p-8 space-y-8">
@@ -8,14 +10,14 @@ export default function DebugPage() {
         
         <div className="border p-4 rounded">
           <h3 className="font-medium mb-2">1. Relative path (current):</h3>
-          <img src="/next.svg" alt="Next.js logo" width={180} height={38} />
-          <p className="text-sm text-gray-600 mt-1">Path: /next.svg</p>
+          <img src={`${baseUrl}/next.svg`} alt="Next.js logo" width={180} height={38} />
+          <p className="text-sm text-gray-600 mt-1">Path: {`${baseUrl}/next.svg`}</p>
         </div>
         
         <div className="border p-4 rounded">
-          <h3 className="font-medium mb-2">2. With basePath:</h3>
-          <img src="/ai-hackathon-2025/next.svg" alt="Next.js logo" width={180} height={38} />
-          <p className="text-sm text-gray-600 mt-1">Path: /ai-hackathon-2025/next.svg</p>
+          <h3 className="font-medium mb-2">2. With basePath (redundant):</h3>
+          <img src={`${baseUrl}/next.svg`} alt="Next.js logo" width={180} height={38} />
+          <p className="text-sm text-gray-600 mt-1">Path: {`${baseUrl}/next.svg`}</p>
         </div>
         
         <div className="border p-4 rounded">
@@ -27,11 +29,11 @@ export default function DebugPage() {
         <div className="border p-4 rounded">
           <h3 className="font-medium mb-2">4. Other images:</h3>
           <div className="flex gap-4">
-            <img src="/file.svg" alt="File icon" width={32} height={32} />
-            <img src="/window.svg" alt="Window icon" width={32} height={32} />
-            <img src="/globe.svg" alt="Globe icon" width={32} height={32} />
+            <img src={`${baseUrl}/file.svg`} alt="File icon" width={32} height={32} />
+            <img src={`${baseUrl}/window.svg`} alt="Window icon" width={32} height={32} />
+            <img src={`${baseUrl}/globe.svg`} alt="Globe icon" width={32} height={32} />
           </div>
-          <p className="text-sm text-gray-600 mt-1">Paths: /file.svg, /window.svg, /globe.svg</p>
+          <p className="text-sm text-gray-600 mt-1">Paths: {`${baseUrl}/file.svg`}, {`${baseUrl}/window.svg`}, {`${baseUrl}/globe.svg`}</p>
         </div>
       </div>
       

@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+const baseUrl = '/ai-hackathon-2025';
+
 export default function TestImages() {
   return (
     <div className="p-8">
@@ -8,46 +10,45 @@ export default function TestImages() {
       <div className="space-y-4">
         <div>
           <h2 className="text-lg font-semibold">Next.js Logo</h2>
-          <Image
-            src="/next.svg"
+          <img
+            src={`${baseUrl}/next.svg`}
             alt="Next.js logo"
             width={180}
             height={38}
-            priority
-            unoptimized
+            style={{ display: 'block' }}
           />
         </div>
         
         <div>
           <h2 className="text-lg font-semibold">File Icon</h2>
-          <Image
-            src="/file.svg"
+          <img
+            src={`${baseUrl}/file.svg`}
             alt="File icon"
             width={32}
             height={32}
-            unoptimized
+            style={{ display: 'inline-block' }}
           />
         </div>
         
         <div>
           <h2 className="text-lg font-semibold">Window Icon</h2>
-          <Image
-            src="/window.svg"
+          <img
+            src={`${baseUrl}/window.svg`}
             alt="Window icon"
             width={32}
             height={32}
-            unoptimized
+            style={{ display: 'inline-block' }}
           />
         </div>
         
         <div>
           <h2 className="text-lg font-semibold">Globe Icon</h2>
-          <Image
-            src="/globe.svg"
+          <img
+            src={`${baseUrl}/globe.svg`}
             alt="Globe icon"
             width={32}
             height={32}
-            unoptimized
+            style={{ display: 'inline-block' }}
           />
         </div>
       </div>

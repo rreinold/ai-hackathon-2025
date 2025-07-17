@@ -1,10 +1,12 @@
+const baseUrl = '/ai-hackathon-2025';
+
 export default function Home() {
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <img
           className="dark:invert"
-          src="/next.svg"
+          src={`${baseUrl}/next.svg`}
           alt="Next.js logo"
           width={180}
           height={38}
@@ -32,7 +34,7 @@ export default function Home() {
         >
           <img
             aria-hidden
-            src="/file.svg"
+            src={`${baseUrl}/file.svg`}
             alt="File icon"
             width={16}
             height={16}
@@ -48,7 +50,7 @@ export default function Home() {
         >
           <img
             aria-hidden
-            src="/window.svg"
+            src={`${baseUrl}/window.svg`}
             alt="Window icon"
             width={16}
             height={16}
@@ -64,7 +66,7 @@ export default function Home() {
         >
           <img
             aria-hidden
-            src="/globe.svg"
+            src={`${baseUrl}/globe.svg`}
             alt="Globe icon"
             width={16}
             height={16}
