@@ -1,15 +1,15 @@
 import type { NextConfig } from "next";
 
-const nextConfig = {
+const nextConfig: NextConfig = {
   output: 'export',
   trailingSlash: true,
-  basePath: '/ai-hackathon-2025', // Replace with your actual repo name
+  basePath: '/ai-hackathon-2025',
   assetPrefix: '/ai-hackathon-2025',
   images: {
-    unoptimized: true
+    unoptimized: true,
+    loader: 'default',
+    path: '/ai-hackathon-2025/_next/image',
   }
 }
-
-module.exports = nextConfig
 
 export default nextConfig;

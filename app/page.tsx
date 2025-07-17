@@ -24,8 +24,6 @@ export default function Home() {
             Save and see your changes instantly.
           </li>
         </ol>
-
-
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
@@ -40,6 +38,7 @@ export default function Home() {
             alt="File icon"
             width={16}
             height={16}
+            unoptimized
           />
           Learn
         </a>
@@ -55,6 +54,7 @@ export default function Home() {
             alt="Window icon"
             width={16}
             height={16}
+            unoptimized
           />
           Examples
         </a>
@@ -70,6 +70,7 @@ export default function Home() {
             alt="Globe icon"
             width={16}
             height={16}
+            unoptimized
           />
           Go to nextjs.org →
         </a>
