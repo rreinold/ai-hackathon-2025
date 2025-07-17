@@ -3,8 +3,8 @@ import type { NextConfig } from "next";
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
-  basePath: '/your-repository-name', // Replace with your actual repo name
-  assetPrefix: '/your-repository-name',
+  basePath: '/ai-hackathon-2025', // Replace with your actual repo name
+  assetPrefix: '/ai-hackathon-2025',
   images: {
     unoptimized: true
   }
