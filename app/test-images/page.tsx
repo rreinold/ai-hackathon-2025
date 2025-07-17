@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const baseUrl = '/ai-hackathon-2025';
+const baseUrl = process.env.NODE_ENV === 'development' ? '' : '/ai-hackathon-2025';
 
 export default function TestImages() {
   return (
